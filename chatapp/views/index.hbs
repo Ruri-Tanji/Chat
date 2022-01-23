@@ -1,0 +1,27 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #006633;">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">楽楽会議</h1>
+        </div>
+    </nav>
+    <div class="row">
+        <form method="post" action="/room">
+            <div class="form-group">
+                お名前
+                <input type="text" id="userName" name="userName" class="form-control">
+            </div>
+            <div class="index-enter">
+                <!-- ボタンは大きく ドアのアイコン設置-->
+                <button type="button" class="btn btn-success" onclick="enter();">
+                    <img src="/img/login.png" height="23" width="23">入室する
+                </button>
+                <!-- <input type="button" value="入室する" class="btn btn-success" onclick="enter();"> -->
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/javascripts/socket.js"></script>
+<script src="/javascripts/index.js"></script>
+<script src="/javascripts/enter.js"></script>
+

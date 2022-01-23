@@ -1,0 +1,175 @@
+/*
+ * 画面全体に関する設定
+ */
+body {
+    font: 14px "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+div {
+    margin: 20px 0px;
+}
+
+.row {
+    margin: 20px;
+}
+
+/*
+ * トップ画面（index.hbs）に関する設定
+ */
+.index-user_name {
+
+}
+
+.index-user_name_text {
+    width: 200px;
+}
+
+/* 入室ボタン */
+img {
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
+.index-enter{
+    margin-top: 50px;
+}
+
+.index-enter .btn{
+    font-size: 20px;
+}
+
+/*
+ * チャットルーム画面（room.hbs）に関する設定
+ */
+
+.navbar-nav {
+    margin-right: 2vw;
+}
+
+.navbar-brand {
+    margin-left: 2vw;
+}
+
+.room-message {
+    width: 50vw;
+}
+
+.room-submit{
+    margin-right: 2vw;
+}
+
+.room-submit .btn {
+    font-size: 20px;
+}
+
+.room-exit .btn{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.time_date {
+    color: #747474;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+/*送る方*/
+/* 投稿 */
+.outgoing_msg{ 
+    overflow:hidden; 
+    margin:10px 0 10px;
+}
+.sent_msg {
+    float: right;
+    width: 46%;
+    margin: 5px;
+}
+.sent_msg p {
+    background: #05728f none repeat scroll 0 0;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0; color:#fff;
+    padding: 5px 10px 5px 12px;
+    width:100%;
+}
+.sent_msg_trash {
+
+}
+
+/* dm */
+.outgoing_dm{ 
+    overflow:hidden; 
+    margin:10px 0 10px;
+}
+.sent_dm {
+    float: right;
+    width: 46%;
+    margin: 5px;
+}
+.sent_dm p {
+    background: #05728f none repeat scroll 0 0;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0; color:#fff;
+    padding: 5px 10px 5px 12px;
+    width:100%;
+}
+
+/*受け取る方*/
+.incoing_msg {
+    overflow:hidden; 
+    margin:10px 0 10px;
+}
+.received_msg {
+    float: left;
+    width: 46%;
+    margin: 5px;
+}
+.received_msg p {
+    background: #9eda76 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #646464;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+
+
+/* 入室 */
+.enter_comment {
+    opacity: 0.5;
+    text-align:center;
+}
+
+/* 退室 */
+.exit_comment {
+    opacity: 0.5;
+    text-align:center;
+}
+
+/* チャット画面の背景 */
+.room-thread {
+    background: #b8f0ba;
+    border-radius: 40px 40px 40px 40px;
+}
+
+/* 全てのボタン */
+.btn {
+    border-radius: 40px 40px 40px 40px;
+}
+
+/* ユーザーボタン */
+.btn-dm{
+    margin-bottom: 5px;
+}
+
+.btn-dm.Active{
+    background-color: #0DCAF0;
+    color: #000;
+}

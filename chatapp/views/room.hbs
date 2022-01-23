@@ -1,0 +1,75 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #006633;">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">楽楽会議</h1>
+            <div class="navbar-nav">
+                <p class="text-white">自分のユーザー名 "{{userName}}"</p>
+            </div>
+        </div>
+    </nav>
+    <form method="post" action="/">
+        <div class="mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="room-thread">
+                        <div id="thread"></div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-5">
+                    <div class="room-users align-left">
+                        <div id="loginUsers"></div>
+                        <input id="selectedUserName" type="text" value="">さんにDMできます
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <footer class="mt-5">
+                <nav class="navbar fixed-bottom navbar-light bg-light">
+                    <div class="room-login_user">
+                        <input id="userName" type="hidden" value={{userName}}>
+                    </div>
+                    <div class="room-message">
+                        <div class="form-group">
+                            <textarea id="message" rows="4" class="form-control" placeholder="投稿文を入力してください"></textarea>
+                        </div>
+                    </div>
+                    <div class="room-submit">
+                        <button type="button" class="btn btn-success" onclick="publish();">
+                            <img src="/img/publish.png" height="23" width="23">投稿
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="memo();">
+                            <img src="/img/memo.png" height="23" width="23">メモ
+                        </button>
+                        <button type="button" class="btn btn-info" onclick="directmsg();">
+                            <img src="/img/dm.png" height="23" width="23">DM
+                        </button>
+                        <!--
+                        <input type="button" value="投稿" class="btn btn-success" onclick="publish();">
+                        <input type="button" value="メモ" class="btn btn-secondary" onclick="memo();">
+                        <input type="button" value="DM" class="btn btn-info" onclick="directmsg();">
+                        -->
+                        <div class="room-exit">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                        <button type="button" class="btn btn-danger" onclick="exit();">
+                            <img src="/img/logout.png" height="23" width="23">退室する
+                        </button>
+                        <!--
+                        <input type="button" value="退室する" class="btn btn-danger" onclick="exit();">
+                        -->
+                    </div>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+    </form>
+</div>
+
+<script src="/javascripts/socket.js"></script>
+<script src="/javascripts/enter.js"></script>
+<script src="/javascripts/publish.js"></script>
+<script src="/javascripts/memo.js"></script>
+<script src="/javascripts/exit.js"></script>
+<script src="/javascripts/dm.js"></script>
